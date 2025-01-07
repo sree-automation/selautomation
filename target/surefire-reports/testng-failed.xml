@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="AutomationProjects.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Login Error Validations Test(failed)" verbose="0">
+    <classes>
+      <class name="AutomationProjects.Tests.ErrorValidations">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="ProductErrorValidation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- AutomationProjects.Tests.ErrorValidations -->
+    </classes>
+  </test> <!-- Login Error Validations Test(failed) -->
+  <test thread-count="5" name="Registration Error Validations Test(failed)" verbose="0">
+    <classes>
+      <class name="AutomationProjects.Tests.RegistrationTests">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="VerifyFirstNameErrorMessage"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- AutomationProjects.Tests.RegistrationTests -->
+    </classes>
+  </test> <!-- Registration Error Validations Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
